@@ -1,0 +1,98 @@
+/* General styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(166, 205, 234); /* Soft blue background */
+}
+
+header {
+    background-color: #61a0e8; /* Light blue */
+    color: #010165; /* Darker blue for better contrast */
+    padding: 1em 0;
+    text-align: center;
+}
+
+nav a {
+    color: #000000; /* Set to black */
+    margin: 0 1em;
+    text-decoration: none;
+}
+
+section {
+    padding: 2em;
+}
+
+h2, h3 {
+    color: #2148f8; /* Deep blue headings */
+}
+
+.featured-players, .profiles-container {
+    display: flex;
+    gap: 1em;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.player-card, .player-profile {
+    background-color: rgb(183, 204, 226); /* Light grey-blue */
+    border: 1px solid #ccc; /* Light grey border */
+    padding: 1em;
+    text-align: center;
+    flex: 1;
+    min-width: 150px;
+    max-width: 200px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    transition: transform 0.3s; /* Smooth scaling effect */
+}
+
+.player-card img, .player-profile img {
+    width: 100%;
+    height: auto;
+    object-fit: cover; /* Ensures the image fits nicely */
+    border-radius: 4px; /* Slight rounding of image corners */
+}
+
+.player-card:hover, .player-profile:hover {
+    transform: scale(1.05); /* Scaling effect on hover */
+}
+
+iframe {
+    width: 100%; /* Full width for iframes */
+    height: 200px;
+    margin-top: 10px;
+}
+
+#map {
+    width: 100%; /* Full width map */
+    height: 400px; /* Specific height for the map */
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+}
+

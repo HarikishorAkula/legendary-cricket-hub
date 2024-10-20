@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cricket Legends Hub</title>
+    <link rel="stylesheet" href="3.css"> <!-- Corrected CSS link -->
+    <script defer src="3.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Cricket Legends Hub</h1>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#player-profiles">Player Profiles</a>
+            <a href="#interactive-map">Interactive Map</a>
+            <a href="#top-matches">Top Matches</a>
+            <a href="#fan-zone">Fan Zone</a>
+        </nav>
+    </header>
+
+    <section id="home" class="section">
+        <h2>Welcome to Cricket Legends Hub</h2>
+        <p>Cricket is more than just a sport – it’s a passion that unites millions across the globe. 
+            From the streets of India to the stadiums of Australia, the spirit of cricket is felt everywhere. 
+            It’s a game of strategy, skill, and immense dedication. Whether you’re a fan of thrilling fast bowling, 
+            elegant batting, or incredible fielding, cricket offers something for everyone. 
+            In this hub, we celebrate some of the most iconic legends who have left a lasting legacy on the cricketing world. 
+            Explore their journeys, achievements, and watch their incredible performances.</p>
+        <h3>Featured Players</h3>
+        <div class="featured-players">
+            <!-- Player cards will be dynamically generated here -->
+        </div>
+    </section>
+
+    <section id="player-profiles" class="section">
+        <h2>Player Profiles</h2>
+        <div class="profiles-container">
+            <!-- Player profiles will be dynamically generated here -->
+        </div>
+    </section>
+
+    <section id="interactive-map" class="section">
+        <h2>Interactive Map</h2>
+        <div id="map"></div>
+    </section>
+
+    <section id="top-matches" class="section">
+        <h2>Top Matches</h2>
+        <div class="matches-container">
+            <!-- Match cards will be dynamically generated here -->
+        </div>
+    </section>
+
+    <section id="fan-zone" class="section">
+        <h2>Fan Zone</h2>
+        <div class="fan-submission">
+            <h3>Submit Your Favorite Player Story</h3>
+            <form id="story-form">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="story">Your Story:</label>
+                <textarea id="story" name="story" rows="4" required></textarea>
+                
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+
+        <div class="vote-section">
+            <h3>Vote for the Greatest Player of All Time</h3>
+            <form id="vote-form">
+                <label for="player">Choose your favorite player:</label>
+                <select name="player" id="player">
+                    <option value="">--Select a player--</option>
+                    <option value="Sachin Tendulkar">Sachin Tendulkar</option>
+                    <option value="Brian Lara">Brian Lara</option>
+                    <option value="Ricky Ponting">Ricky Ponting</option>
+                    <option value="Jacques Kallis">Jacques Kallis</option>
+                    <option value="Virat Kohli">Virat Kohli</option>
+                </select>
+                <button type="submit">Vote</button>
+            </form>
+            
+            <div id="vote-results">
+                <!-- Votes will be displayed here dynamically -->
+            </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Cricket Legends Hub</p>
+    </footer>
+</body>
+</html>
